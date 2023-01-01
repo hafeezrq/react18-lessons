@@ -1,8 +1,9 @@
+import searchImages from './api';
 import SearchBar from './components/SearchBar';
 
 const PicsApp = () => {
   const handleSubmit = term => {
-    console.log(term);
+    searchImages(term);
   };
   return (
     <div>

@@ -3,10 +3,9 @@ const SearchBar = ({ onSubmit }) => {
   const [term, setTerm] = useState('');
   const handleSubmit = event => {
     event.preventDefault();
-    onSubmit('cars from child');
+    onSubmit(term);
   };
   const handleChange = event => {
-    console.log(event.target.value);
     setTerm(event.target.value);
   };
   return (
