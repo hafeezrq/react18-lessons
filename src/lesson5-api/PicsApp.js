@@ -1,5 +1,14 @@
+import SearchBar from './components/SearchBar';
+
 const PicsApp = () => {
-  return <div>PicsApp</div>;
+  const handleSubmit = term => {
+    console.log(term);
+  };
+  return (
+    <div>
+      <SearchBar onSubmit={handleSubmit} />
+    </div>
+  );
 };
 
 export default PicsApp;
