@@ -5,7 +5,11 @@ function FormsApp() {
   const [books, setBooks] = useState([]);
 
   const createBook = title => {
-    console.log('Add book: ', title);
+    const updatedBooks = [
+      ...books,
+      { id: Math.round(Math.random() * 999), title },
+    ];
+    setBooks(updatedBooks);
   };
 
   return (
