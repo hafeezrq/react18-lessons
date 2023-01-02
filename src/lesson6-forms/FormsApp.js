@@ -13,6 +13,16 @@ function FormsApp() {
     setBooks(updatedBooks);
   };
 
+  const editBookById = (id, newTitle) => {
+    const updatedBooks = books.map(book => {
+      if (book.id === id) {
+        return { ...book, title: newTitle };
+      }
+      return book;
+    });
+    setBooks(updatedBooks);
+  };
+
   const deleteBookById = id => {
     const updatedBooks = books.filter(book => {
       return book.id !== id;
@@ -22,7 +32,8 @@ function FormsApp() {
 
   return (
     <div>
-      <BookList books={books} onDelete={deleteBookById} />
+      <h1>Reading List</h1>
+      <BookList books={books} onDelete={deleteBookById} onEdit={editBookById} />
       <BookCreate createBook={createBook} />
     </div>
   );
