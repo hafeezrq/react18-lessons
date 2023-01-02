@@ -13,9 +13,16 @@ function FormsApp() {
     setBooks(updatedBooks);
   };
 
+  const deleteBookById = id => {
+    const updatedBooks = books.filter(book => {
+      return book.id !== id;
+    });
+    setBooks(updatedBooks);
+  };
+
   return (
     <div>
-      <BookList books={books} />
+      <BookList books={books} onDelete={deleteBookById} />
       <BookCreate createBook={createBook} />
     </div>
   );
