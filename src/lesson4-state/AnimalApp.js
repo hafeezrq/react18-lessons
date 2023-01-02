@@ -20,7 +20,7 @@ const App = () => {
   });
 
   return (
-    <div className='app'>
+    <div className='animal-app'>
       <button className='animal-show' onClick={handleClick}>
         Add Animal
       </button>
