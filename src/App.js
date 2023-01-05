@@ -1,6 +1,6 @@
 // import AnimalApp from './lesson4-state/AnimalApp';
 // import PicsApp from './lesson5-api/PicsApp';
-import FormsApp from './lesson6-forms/FormsApp';
+import FormsApp from './lesson6_7-forms_api/FormsApp';
 
 function App() {
   return (
