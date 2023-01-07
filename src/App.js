@@ -1,8 +1,9 @@
-import { Provider } from './lesson8-context/context/books';
+import RoutingApp from './lesson10-routing/RoutingApp';
+// import { Provider } from './lesson8-context/context/books';
 // import AnimalApp from './lesson4-state/AnimalApp';
 // import PicsApp from './lesson5-api/PicsApp';
 // import FormsApp from './lesson6_7-forms_api/FormsApp';
-import FormsAppContext from './lesson8-context/FormsAppContex';
+// import FormsAppContext from './lesson8-context/FormsAppContex';
 
 function App() {
   return (
@@ -11,9 +12,10 @@ function App() {
       {/* <AnimalApp /> */}
       {/* <PicsApp /> */}
       {/* <FormsApp /> */}
-      <Provider>
+      {/* <Provider>
         <FormsAppContext />
-      </Provider>
+      </Provider> */}
+      <RoutingApp />
     </div>
   );
 }
