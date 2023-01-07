@@ -8,7 +8,7 @@ function FormsAppContext() {
   const { fetchBooks } = useBookContext();
   useEffect(() => {
     fetchBooks();
-  }, []);
+  }, [fetchBooks]);
 
   return (
     <div>
