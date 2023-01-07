@@ -1,11 +1,12 @@
-import React from 'react';
+import './input.css';
+
 import Button from './Button';
 
 function RoutingApp() {
   return (
     <div>
       <div>
-        <Button>Click Me</Button>
+        <Button success>Click Me</Button>
       </div>
       <div>
         <Button>Buy Now!</Button>
