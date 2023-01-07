@@ -5,16 +5,16 @@ function RoutingApp() {
   return (
     <div>
       <div>
-        <Button />
+        <Button>Click Me</Button>
       </div>
       <div>
-        <Button />
+        <Button>Buy Now!</Button>
       </div>
       <div>
-        <Button />
+        <Button>Cancel</Button>
       </div>
       <div>
-        <Button />
+        <Button>Hide details</Button>
       </div>
     </div>
   );
