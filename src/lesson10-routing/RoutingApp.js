@@ -6,16 +6,27 @@ function RoutingApp() {
   return (
     <div>
       <div>
-        <Button>Click Me</Button>
+        <Button primary outline>
+          Click Me
+        </Button>
       </div>
       <div>
-        <Button>Buy Now!</Button>
+        <Button secondary rounded>
+          Buy Now!
+        </Button>
       </div>
       <div>
-        <Button>Cancel</Button>
+        <Button danger rounded>
+          Cancel
+        </Button>
       </div>
       <div>
-        <Button>Hide details</Button>
+        <Button warning>Hide details</Button>
+      </div>
+      <div>
+        <Button success rounded>
+          Complete
+        </Button>
       </div>
     </div>
   );
