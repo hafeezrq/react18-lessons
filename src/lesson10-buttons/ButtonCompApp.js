@@ -4,7 +4,7 @@ import { GoBell, GoCloudDownload, GoDatabase } from 'react-icons/go';
 
 import Button from './Button';
 
-function RoutingApp() {
+function ButtonCompApp() {
   const handleClick = () => {
     console.log('Got clicked!!!');
   };
@@ -52,4 +52,4 @@ function RoutingApp() {
   );
 }
 
-export default RoutingApp;
+export default ButtonCompApp;

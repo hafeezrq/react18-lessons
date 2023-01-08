@@ -1,4 +1,4 @@
-import RoutingApp from './lesson10-routing/RoutingApp';
+import ButtonCompApp from './lesson10-buttons/ButtonCompApp';
 // import { Provider } from './lesson8-context/context/books';
 // import AnimalApp from './lesson4-state/AnimalApp';
 // import PicsApp from './lesson5-api/PicsApp';
@@ -15,7 +15,7 @@ function App() {
       {/* <Provider>
         <FormsAppContext />
       </Provider> */}
-      <RoutingApp />
+      <ButtonCompApp />
     </div>
   );
 }
