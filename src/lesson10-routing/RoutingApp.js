@@ -1,30 +1,50 @@
-import './input.css';
+import './output.css';
+
+import { GoBell, GoCloudDownload, GoDatabase } from 'react-icons/go';
 
 import Button from './Button';
 
 function RoutingApp() {
+  const handleClick = () => {
+    console.log('Got clicked!!!');
+  };
+  const handleMouseEnter = () => {
+    console.log('Got MouseEnter!!!');
+  };
+  const handleMouseLeave = () => {
+    console.log('Got MouseLeave!!!');
+  };
   return (
     <div>
       <div>
-        <Button primary outline>
+        <Button primary outline onClick={handleClick} className='mb-5'>
+          <GoBell />
           Click Me
         </Button>
       </div>
       <div>
-        <Button secondary rounded>
+        <Button
+          secondary
+          rounded
+          onMouseEnter={handleMouseEnter}
+          className='mb-5'>
+          <GoDatabase />
           Buy Now!
         </Button>
       </div>
       <div>
-        <Button danger rounded>
+        <Button danger rounded onMouseLeave={handleMouseLeave} className='mb-5'>
+          <GoCloudDownload />
           Cancel
         </Button>
       </div>
       <div>
-        <Button warning>Hide details</Button>
+        <Button warning className='mb-5'>
+          Hide details
+        </Button>
       </div>
       <div>
-        <Button success rounded>
+        <Button success rounded className='mb-5'>
           Complete
         </Button>
       </div>
