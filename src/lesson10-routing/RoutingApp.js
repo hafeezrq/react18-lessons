@@ -6,7 +6,7 @@ function RoutingApp() {
   return (
     <div>
       <div>
-        <Button success>Click Me</Button>
+        <Button>Click Me</Button>
       </div>
       <div>
         <Button>Buy Now!</Button>
