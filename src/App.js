@@ -1,4 +1,5 @@
-import ButtonCompApp from './lesson10-buttons/ButtonCompApp';
+import StateDesignApp from './lesson11-state/StateDesignApp';
+// import ButtonCompApp from './lesson10-buttons/ButtonCompApp';
 // import { Provider } from './lesson8-context/context/books';
 // import AnimalApp from './lesson4-state/AnimalApp';
 // import PicsApp from './lesson5-api/PicsApp';
@@ -15,7 +16,8 @@ function App() {
       {/* <Provider>
         <FormsAppContext />
       </Provider> */}
-      <ButtonCompApp />
+      {/* <ButtonCompApp /> */}
+      <StateDesignApp />
     </div>
   );
 }
