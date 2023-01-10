@@ -1,5 +1,3 @@
-import './output.css';
-
 import { GoBell, GoCloudDownload, GoDatabase } from 'react-icons/go';
 
 import Button from './Button';
