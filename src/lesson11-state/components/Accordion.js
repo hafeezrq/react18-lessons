@@ -5,11 +5,20 @@ function Accordion({ items }) {
   const [expendedIndex, setExpendedIndex] = useState(-1);
 
   function handleClick(index) {
-    if (expendedIndex === index) {
+    // Just to address a very very rare bug, in this sort of
+    // state update.
+    setExpendedIndex(currentExpendedIndex => {
+      if (currentExpendedIndex === index) {
+        return -1;
+      } else {
+        return index;
+      }
+    });
+    /* if (expendedIndex === index) {
       setExpendedIndex(-1);
     } else {
       setExpendedIndex(index);
-    }
+    } */
   }
 
   const renderdItems = items.map((item, index) => {
