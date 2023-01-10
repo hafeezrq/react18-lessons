@@ -1,11 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 function Accordion({ items }) {
-  const renderdItems = items.map(item => {
+  const [expendedIndex, setExpendedIndex] = useState(0);
+
+  const renderdItems = items.map((item, index) => {
+    const isExpended = index === expendedIndex;
+
     return (
       <div key={item.id}>
         <div>{item.label}</div>
-        <div>{item.content}</div>
+
+        {isExpended && <div>{item.content}</div>}
       </div>
     );
   });
