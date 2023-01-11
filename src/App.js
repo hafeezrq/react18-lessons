@@ -8,8 +8,10 @@ import StateDesignApp from './lesson11-state/StateDesignApp';
 
 function App() {
   return (
-    <div className='App'>
-      <h1>React Version 18 Lessons</h1>
+    <div className='App container w-1/2 mt-8'>
+      <h1 className='text-2xl text-center mb-8 font-bold text-blue-500'>
+        React Version 18 Lessons
+      </h1>
       {/* <AnimalApp /> */}
       {/* <PicsApp /> */}
       {/* <FormsApp /> */}
