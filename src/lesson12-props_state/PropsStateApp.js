@@ -1,14 +1,26 @@
+import { useState } from 'react';
+
 import Dropdown from './components/Dropdown';
 
 function PropsStateApp() {
+  const [selection, setSelection] = useState(null);
+
+  const handleSelection = option => {
+    setSelection(option);
+  };
+
   const options = [
     { label: 'Red', value: 'red' },
     { label: 'Blue', value: 'blue' },
-    { label: 'green', value: 'green' },
+    { label: 'Green', value: 'green' },
   ];
   return (
     <div>
-      <Dropdown options={options} />
+      <Dropdown
+        options={options}
+        value={selection}
+        onChange={handleSelection}
+      />
     </div>
   );
 }
