@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  background-color: rgb(147 197 253);
+}
+
 button > svg {
   margin-right: 5px;
 }
