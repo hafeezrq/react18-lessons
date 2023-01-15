@@ -1,4 +1,4 @@
-import PropsStateApp from './lesson12-props_state/PropsStateApp';
+// import PropsStateApp from './lesson12-props_state/PropsStateApp';
 // import StateDesignApp from './lesson11-state/StateDesignApp';
 // import ButtonCompApp from './lesson10-buttons/ButtonCompApp';
 // import { Provider } from './lesson8-context/context/books';
@@ -21,7 +21,7 @@ function App() {
       </Provider> */}
       {/* <ButtonCompApp /> */}
       {/* <StateDesignApp /> */}
-      <PropsStateApp />
+      {/* <PropsStateApp /> */}
     </div>
   );
 }
