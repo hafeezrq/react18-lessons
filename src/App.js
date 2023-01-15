@@ -1,5 +1,8 @@
-// import PropsStateApp from './lesson12-props_state/PropsStateApp';
-// import StateDesignApp from './lesson11-state/StateDesignApp';
+import Link from './lesson13-navigattion/context/Link';
+import Rout from './lesson13-navigattion/context/Rout';
+
+import PropsStateApp from './lesson12-props_state/PropsStateApp';
+import StateDesignApp from './lesson11-state/StateDesignApp';
 // import ButtonCompApp from './lesson10-buttons/ButtonCompApp';
 // import { Provider } from './lesson8-context/context/books';
 // import AnimalApp from './lesson4-state/AnimalApp';
@@ -13,6 +16,18 @@ function App() {
       <h1 className='text-2xl text-center mb-8 font-bold text-blue-500'>
         React Version 18 Lessons
       </h1>
+      <div>
+        <Link to={'/accordion'}>Accordion</Link>
+        <Link to={'/testings'}>Testings</Link>
+      </div>
+      <div>
+        <Rout path={'/accordion'}>
+          <StateDesignApp />
+        </Rout>
+        <Rout path={'/dropdown'}>
+          <PropsStateApp />
+        </Rout>
+      </div>
       {/* <AnimalApp /> */}
       {/* <PicsApp /> */}
       {/* <FormsApp /> */}
@@ -20,8 +35,6 @@ function App() {
         <FormsAppContext />
       </Provider> */}
       {/* <ButtonCompApp /> */}
-      {/* <StateDesignApp /> */}
-      {/* <PropsStateApp /> */}
     </div>
   );
 }
