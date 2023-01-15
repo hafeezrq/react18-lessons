@@ -1,5 +1,5 @@
-import Link from './lesson13-navigattion/context/Link';
-import Rout from './lesson13-navigattion/context/Rout';
+import Link from './lesson13-navigation/Link';
+import Rout from './lesson13-navigation/Rout';
 
 import PropsStateApp from './lesson12-props_state/PropsStateApp';
 import StateDesignApp from './lesson11-state/StateDesignApp';
@@ -18,7 +18,7 @@ function App() {
       </h1>
       <div>
         <Link to={'/accordion'}>Accordion</Link>
-        <Link to={'/testings'}>Testings</Link>
+        <Link to={'/dropdown'}>Dropdown</Link>
       </div>
       <div>
         <Rout path={'/accordion'}>

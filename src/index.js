@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-import { NavigationProvider } from './lesson13-navigattion/context/navigation';
-
+import { NavigationProvider } from './lesson13-navigation/context/navigation';
 // import './styles/index.css';
 import './styles/output.css';
 
