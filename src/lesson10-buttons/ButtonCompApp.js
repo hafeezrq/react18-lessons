@@ -4,13 +4,13 @@ import Button from './Button';
 
 function ButtonCompApp() {
   const handleClick = () => {
-    console.log('Got clicked!!!');
+    // console.log('Got clicked!!!');
   };
   const handleMouseEnter = () => {
-    console.log('Got MouseEnter!!!');
+    // console.log('Got MouseEnter!!!');
   };
   const handleMouseLeave = () => {
-    console.log('Got MouseLeave!!!');
+    // console.log('Got MouseLeave!!!');
   };
   return (
     <div>

@@ -1,9 +1,9 @@
-import Link from './lesson13-navigation/Link';
 import Rout from './lesson13-navigation/Rout';
 
-import PropsStateApp from './lesson12-props_state/PropsStateApp';
+import ButtonCompApp from './lesson10-buttons/ButtonCompApp';
 import StateDesignApp from './lesson11-state/StateDesignApp';
-// import ButtonCompApp from './lesson10-buttons/ButtonCompApp';
+import PropsStateApp from './lesson12-props_state/PropsStateApp';
+import Sidebar from './lesson13-navigation/Sidebar';
 // import { Provider } from './lesson8-context/context/books';
 // import AnimalApp from './lesson4-state/AnimalApp';
 // import PicsApp from './lesson5-api/PicsApp';
@@ -12,20 +12,20 @@ import StateDesignApp from './lesson11-state/StateDesignApp';
 
 function App() {
   return (
-    <div className=' container w-6/12 mt-8 mx-auto'>
-      <h1 className='text-2xl text-center mb-8 font-bold text-blue-500'>
+    <div className=' container mx-auto grid grid-cols-6 gap-4 mt-4'>
+      <h1 className='text-2xl text-center mb-8 font-bold text-blue-500 col-span-6'>
         React Version 18 Lessons
       </h1>
-      <div>
-        <Link to={'/accordion'}>Accordion</Link>
-        <Link to={'/dropdown'}>Dropdown</Link>
-      </div>
-      <div>
+      <Sidebar />
+      <div className='col-span-5'>
         <Rout path={'/accordion'}>
           <StateDesignApp />
         </Rout>
-        <Rout path={'/dropdown'}>
+        <Rout path={'/'}>
           <PropsStateApp />
+        </Rout>
+        <Rout path={'/buttons'}>
+          <ButtonCompApp />
         </Rout>
       </div>
       {/* <AnimalApp /> */}
