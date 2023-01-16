@@ -6,8 +6,8 @@ import PropsStateApp from './lesson12-props_state/PropsStateApp';
 import Sidebar from './lesson13-navigation/Sidebar';
 import AnimalPage from './lesson4-state/pages/AnimalPage';
 import PicsPage from './lesson5-api/PicsPage';
+import FormsApiPage from './lesson6_7-forms_api/FormaAPIPage';
 // import { Provider } from './lesson8-context/context/books';
-// import FormsApp from './lesson6_7-forms_api/FormsApp';
 // import FormsAppContext from './lesson8-context/FormsAppContex';
 
 function App() {
@@ -23,6 +23,9 @@ function App() {
         </Rout>
         <Rout path={'/picsPage'}>
           <PicsPage />
+        </Rout>
+        <Rout path={'/form-api'}>
+          <FormsApiPage />
         </Rout>
         <Rout path={'/accordion'}>
           <StateDesignApp />

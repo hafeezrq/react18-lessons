@@ -2,10 +2,10 @@ import { useState, useEffect } from 'react';
 
 import axios from 'axios';
 
-import BookCreate from './BookCreate';
-import BookList from './BookList';
+import BookCreate from './components/BookCreate';
+import BookList from './components/BookList';
 
-function FormsApp() {
+function FormsApiPage() {
   const [books, setBooks] = useState([]);
 
   const fetchBooks = async () => {
@@ -55,4 +55,4 @@ function FormsApp() {
   );
 }
 
-export default FormsApp;
+export default FormsApiPage;
