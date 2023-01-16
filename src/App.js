@@ -5,8 +5,8 @@ import StateDesignApp from './lesson11-state/StateDesignApp';
 import PropsStateApp from './lesson12-props_state/PropsStateApp';
 import Sidebar from './lesson13-navigation/Sidebar';
 import AnimalPage from './lesson4-state/pages/AnimalPage';
+import PicsPage from './lesson5-api/PicsPage';
 // import { Provider } from './lesson8-context/context/books';
-// import PicsApp from './lesson5-api/PicsApp';
 // import FormsApp from './lesson6_7-forms_api/FormsApp';
 // import FormsAppContext from './lesson8-context/FormsAppContex';
 
@@ -20,6 +20,9 @@ function App() {
       <div className='col-span-5'>
         <Rout path={'/stateExample1'}>
           <AnimalPage />
+        </Rout>
+        <Rout path={'/picsPage'}>
+          <PicsPage />
         </Rout>
         <Rout path={'/accordion'}>
           <StateDesignApp />

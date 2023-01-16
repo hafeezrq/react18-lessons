@@ -3,7 +3,7 @@ import searchImages from './api';
 import SearchBar from './components/SearchBar';
 import ImageList from './components/ImageList';
 
-const PicsApp = () => {
+const PicsPage = () => {
   const [images, setImages] = useState([]);
 
   const handleSubmit = async term => {
@@ -18,4 +18,4 @@ const PicsApp = () => {
   );
 };
 
-export default PicsApp;
+export default PicsPage;
