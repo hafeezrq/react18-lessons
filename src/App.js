@@ -4,8 +4,8 @@ import ButtonCompApp from './lesson10-buttons/ButtonCompApp';
 import StateDesignApp from './lesson11-state/StateDesignApp';
 import PropsStateApp from './lesson12-props_state/PropsStateApp';
 import Sidebar from './lesson13-navigation/Sidebar';
+import AnimalPage from './lesson4-state/pages/AnimalPage';
 // import { Provider } from './lesson8-context/context/books';
-// import AnimalApp from './lesson4-state/AnimalApp';
 // import PicsApp from './lesson5-api/PicsApp';
 // import FormsApp from './lesson6_7-forms_api/FormsApp';
 // import FormsAppContext from './lesson8-context/FormsAppContex';
@@ -18,6 +18,9 @@ function App() {
       </h1>
       <Sidebar />
       <div className='col-span-5'>
+        <Rout path={'/stateExample1'}>
+          <AnimalPage />
+        </Rout>
         <Rout path={'/accordion'}>
           <StateDesignApp />
         </Rout>
@@ -28,7 +31,6 @@ function App() {
           <ButtonCompApp />
         </Rout>
       </div>
-      {/* <AnimalApp /> */}
       {/* <PicsApp /> */}
       {/* <FormsApp /> */}
       {/* <Provider>

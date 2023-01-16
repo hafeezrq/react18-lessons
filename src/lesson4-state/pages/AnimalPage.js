@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import AnimalShow from './AnimalShow';
+import AnimalShow from '../components/AnimalShow';
 
 import './AnimalApp.css';
 
@@ -8,7 +8,7 @@ function getRandomAnimal() {
   return myAnimals[Math.floor(Math.random() * myAnimals.length)];
 }
 
-const App = () => {
+const AnimalPage = () => {
   const [animals, setAnimals] = useState([]);
 
   const handleClick = () => {
@@ -28,4 +28,4 @@ const App = () => {
     </div>
   );
 };
-export default App;
+export default AnimalPage;
