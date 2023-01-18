@@ -1,6 +1,6 @@
 import Rout from './lesson13-navigation/Rout';
 
-import ButtonCompApp from './lesson10-buttons/ButtonCompApp';
+import ButtonsPage from './lesson10-buttons/pages/ButtonsPage';
 import StateDesignApp from './lesson11-state/StateDesignApp';
 import PropsStateApp from './lesson12-props_state/PropsStateApp';
 import Sidebar from './lesson13-navigation/Sidebar';
@@ -40,7 +40,7 @@ function App() {
           <PropsStateApp />
         </Rout>
         <Rout path={'/buttons'}>
-          <ButtonCompApp />
+          <ButtonsPage />
         </Rout>
       </div>
       {/* <PicsApp /> */}
