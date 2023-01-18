@@ -9,6 +9,7 @@ import PicsPage from './lesson5-api/PicsPage';
 import FormsAPIPage from './lesson6_7-forms_api/FormsAPIPage';
 import FormWithContextPage from './lesson8-context/FormWithContexPage';
 import { Provider } from './lesson8-context/context/books';
+import ModalPage from './lesson14-PortalWithReactDOM/pages/ModalPage';
 // import { Provider } from './lesson8-context/context/books';
 
 function App() {
@@ -41,6 +42,9 @@ function App() {
         </Rout>
         <Rout path={'/buttons'}>
           <ButtonsPage />
+        </Rout>
+        <Rout path='/modal'>
+          <ModalPage />
         </Rout>
       </div>
       {/* <PicsApp /> */}
