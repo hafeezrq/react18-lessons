@@ -1,7 +1,7 @@
 import React from 'react';
-import Accordion from './components/Accordion';
+import Accordion from '../components/Accordion';
 
-function StateDesignApp() {
+function StateDesignPage() {
   const items = [
     {
       id: 'sdf234',
@@ -29,4 +29,4 @@ function StateDesignApp() {
   );
 }
 
-export default StateDesignApp;
+export default StateDesignPage;

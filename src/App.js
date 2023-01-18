@@ -1,7 +1,7 @@
 import Rout from './lesson13-navigation/Rout';
 
 import ButtonsPage from './lesson10-buttons/pages/ButtonsPage';
-import StateDesignApp from './lesson11-state/StateDesignApp';
+import StateDesignPage from './lesson11-state/pages/StateDesignPage';
 import PropsStateApp from './lesson12-props_state/PropsStateApp';
 import Sidebar from './lesson13-navigation/Sidebar';
 import AnimalPage from './lesson4-state/pages/AnimalPage';
@@ -34,7 +34,7 @@ function App() {
           </Provider>
         </Rout>
         <Rout path={'/accordion'}>
-          <StateDesignApp />
+          <StateDesignPage />
         </Rout>
         <Rout path={'/'}>
           <PropsStateApp />
