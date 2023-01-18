@@ -1,8 +1,8 @@
 import { useState } from 'react';
 
-import Dropdown from './components/Dropdown';
+import Dropdown from '../components/Dropdown';
 
-function PropsStateApp() {
+function PropsStatePage() {
   const [selection, setSelection] = useState(null);
 
   const handleSelection = option => {
@@ -25,4 +25,4 @@ function PropsStateApp() {
   );
 }
 
-export default PropsStateApp;
+export default PropsStatePage;

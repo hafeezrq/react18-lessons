@@ -2,7 +2,7 @@ import Rout from './lesson13-navigation/Rout';
 
 import ButtonsPage from './lesson10-buttons/pages/ButtonsPage';
 import StateDesignPage from './lesson11-state/pages/StateDesignPage';
-import PropsStateApp from './lesson12-props_state/PropsStateApp';
+import PropsStatePage from './lesson12-props_state/pages/PropsStatePage';
 import Sidebar from './lesson13-navigation/Sidebar';
 import AnimalPage from './lesson4-state/pages/AnimalPage';
 import PicsPage from './lesson5-api/PicsPage';
@@ -37,7 +37,7 @@ function App() {
           <StateDesignPage />
         </Rout>
         <Rout path={'/'}>
-          <PropsStateApp />
+          <PropsStatePage />
         </Rout>
         <Rout path={'/buttons'}>
           <ButtonsPage />
