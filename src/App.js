@@ -6,9 +6,10 @@ import PropsStateApp from './lesson12-props_state/PropsStateApp';
 import Sidebar from './lesson13-navigation/Sidebar';
 import AnimalPage from './lesson4-state/pages/AnimalPage';
 import PicsPage from './lesson5-api/PicsPage';
-import FormsApiPage from './lesson6_7-forms_api/FormaAPIPage';
+import FormsAPIPage from './lesson6_7-forms_api/FormsAPIPage';
+import FormWithContextPage from './lesson8-context/FormWithContexPage';
+import { Provider } from './lesson8-context/context/books';
 // import { Provider } from './lesson8-context/context/books';
-// import FormsAppContext from './lesson8-context/FormsAppContex';
 
 function App() {
   return (
@@ -25,7 +26,12 @@ function App() {
           <PicsPage />
         </Rout>
         <Rout path={'/form-api'}>
-          <FormsApiPage />
+          <FormsAPIPage />
+        </Rout>
+        <Rout path={'/context'}>
+          <Provider>
+            <FormWithContextPage />
+          </Provider>
         </Rout>
         <Rout path={'/accordion'}>
           <StateDesignApp />

@@ -8,6 +8,7 @@ function Sidebar() {
     { label: 'State Example1', path: '/stateExample1' },
     { label: 'API Example', path: '/picsPage' },
     { label: 'Forms-API Example', path: '/form-api' },
+    { label: 'Context Example', path: '/context' },
   ];
 
   const renderedLinks = links.map(link => {

@@ -1,10 +1,10 @@
 import { useEffect } from 'react';
 
-import BookCreate from './BookCreate';
-import BookList from './BookList';
-import useBookContext from '../hooks/useBookContext';
+import BookCreate from './components/BookCreate';
+import BookList from './components/BookList';
+import useBookContext from './hooks/useBookContext';
 
-function FormsAppContext() {
+function FormWithContextPage() {
   const { fetchBooks } = useBookContext();
   useEffect(() => {
     fetchBooks();
@@ -19,4 +19,4 @@ function FormsAppContext() {
   );
 }
 
-export default FormsAppContext;
+export default FormWithContextPage;

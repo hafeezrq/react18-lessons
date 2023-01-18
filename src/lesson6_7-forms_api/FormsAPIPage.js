@@ -5,7 +5,7 @@ import axios from 'axios';
 import BookCreate from './components/BookCreate';
 import BookList from './components/BookList';
 
-function FormsApiPage() {
+function FormsAPIPage() {
   const [books, setBooks] = useState([]);
 
   const fetchBooks = async () => {
@@ -55,4 +55,4 @@ function FormsApiPage() {
   );
 }
 
-export default FormsApiPage;
+export default FormsAPIPage;
