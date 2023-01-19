@@ -12,7 +12,7 @@ function FormWithContextPage() {
 
   return (
     <div>
-      <h1>Reading List</h1>
+      <h1>Reading List (Context used to communicate between components)</h1>
       <BookList />
       <BookCreate />
     </div>
