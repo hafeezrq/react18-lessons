@@ -673,6 +673,10 @@ video {
   display: grid;
 }
 
+.h-full {
+  height: 100%;
+}
+
 .w-6\/12 {
   width: 50%;
 }
@@ -703,6 +707,10 @@ video {
 
 .items-center {
   align-items: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
 }
 
 .justify-between {
