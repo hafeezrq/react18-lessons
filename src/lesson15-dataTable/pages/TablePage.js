@@ -15,7 +15,11 @@ function TablePage() {
     },
     {
       lable: 'Color',
-      render: fruit => fruit.color,
+      render: fruit => (
+        <div
+          className={`p-3 m-2 border border-black opacity-50 ${fruit.color}`}
+        />
+      ),
     },
     { lable: 'Score', render: fruit => fruit.score },
   ];

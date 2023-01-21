@@ -3,16 +3,16 @@ function Table({ data, config }) {
     return <th key={head.lable}>{head.lable}</th>;
   });
 
-  const renderedRows = data.map(fruit => {
+  const renderedRows = data.map(row => {
     const renderedCells = config.map(col => {
       return (
         <td className='p-3' key={col.lable}>
-          {col.render(fruit)}
+          {col.render(row)}
         </td>
       );
     });
     return (
-      <tr className='border-b' key={fruit.name}>
+      <tr className='border-b' key={row.name}>
         {/* <td className='p-3'>{config[0].render(fruit)}</td>
         <td className='p-3'>{config[1].render(fruit)}</td>
         <td className='p-3'>{config[2].render(fruit)}</td> */}
