@@ -11,6 +11,7 @@ import FormWithContextPage from './lesson8-context/FormWithContexPage';
 import { Provider } from './lesson8-context/context/books';
 import ModalPage from './lesson14-PortalWithReactDOM/pages/ModalPage';
 import TablePage from './lesson15_16-dataTable/pages/TablePage';
+import CounterPage from './lesson17-CustomHooks/CounterPage';
 // import { Provider } from './lesson8-context/context/books';
 
 function App() {
@@ -49,6 +50,9 @@ function App() {
         </Rout>
         <Rout path='/table'>
           <TablePage />
+        </Rout>
+        <Rout path='/counter'>
+          <CounterPage initialCount={10} />
         </Rout>
       </div>
       {/* <PicsApp /> */}

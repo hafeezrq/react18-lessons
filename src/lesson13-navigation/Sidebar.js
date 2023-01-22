@@ -11,6 +11,7 @@ function Sidebar() {
     { label: 'Context Example', path: '/context' },
     { label: 'Modal', path: '/modal' },
     { label: 'Data Table', path: '/table' },
+    { label: 'Counter', path: '/counter' },
   ];
 
   const renderedLinks = links.map(link => {
