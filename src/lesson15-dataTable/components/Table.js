@@ -1,12 +1,17 @@
+import { Fragment } from 'react';
+
 function Table({ data, config }) {
   const renderedTHeaders = config.map(head => {
-    return <th key={head.lable}>{head.lable}</th>;
+    if (head.header) {
+      return <Fragment key={head.label}>{head.header()}</Fragment>;
+    }
+    return <th key={head.label}>{head.label}</th>;
   });
 
   const renderedRows = data.map(row => {
     const renderedCells = config.map(col => {
       return (
-        <td className='p-3' key={col.lable}>
+        <td className='p-3' key={col.label}>
           {col.render(row)}
         </td>
       );
