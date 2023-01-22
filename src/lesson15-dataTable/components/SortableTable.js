@@ -2,13 +2,19 @@ import Table from './Table';
 
 function SortableTable(props) {
   const { config } = props;
+
+  const handleClick = label => {
+    console.log(label);
+  };
   const updatedConfig = config.map(col => {
     if (!col.sortValue) {
       return col;
     }
     return {
       ...col,
-      header: () => <th>{col.label} sortable</th>,
+      header: () => (
+        <th onClick={() => handleClick(col.label)}>{col.label} sortable</th>
+      ),
     };
   });
 
