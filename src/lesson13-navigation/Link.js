@@ -1,4 +1,4 @@
-import useNavigation from './hooks/use-navigation';
+import useNavigation from '../hooks/use-navigation';
 import classNames from 'classnames';
 
 function Link({ to, children, className, activeClassName }) {

@@ -1,4 +1,4 @@
-import useNavigation from './hooks/use-navigation';
+import useNavigation from '../hooks/use-navigation';
 
 function Rout({ path, children }) {
   const { currentPath } = useNavigation();
