@@ -12,6 +12,7 @@ function Sidebar() {
     { label: 'Modal', path: '/modal' },
     { label: 'Data Table', path: '/table' },
     { label: 'Counter', path: '/counter' },
+    { label: 'Counter2', path: '/counter2' },
   ];
 
   const renderedLinks = links.map(link => {

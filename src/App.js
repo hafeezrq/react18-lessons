@@ -12,6 +12,7 @@ import { Provider } from './lesson8-context/context/books';
 import ModalPage from './lesson14-PortalWithReactDOM/pages/ModalPage';
 import TablePage from './lesson15_16-dataTable/pages/TablePage';
 import CounterPage from './lesson17-CustomHooks/CounterPage';
+import CounterPage2 from './lesson18-reducer/pages/CounterPage2';
 // import { Provider } from './lesson8-context/context/books';
 
 function App() {
@@ -53,6 +54,9 @@ function App() {
         </Rout>
         <Rout path='/counter'>
           <CounterPage initialCount={10} />
+        </Rout>
+        <Rout path='/counter2'>
+          <CounterPage2 initialCount={10} />
         </Rout>
       </div>
       {/* <PicsApp /> */}
