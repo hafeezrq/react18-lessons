@@ -29,9 +29,13 @@ function Counter2({ initialCount }) {
   return (
     <Panel className='m-3'>
       <h1 className='text-lg'>Counter: {counter}</h1>
-      <div className='flex flex-row'>
-        <Button onClick={increment}>Increment</Button>
-        <Button onClick={decrement}>Decrement</Button>
+      <div className='flex flex-row space-x-4'>
+        <Button primary onClick={increment}>
+          Increment
+        </Button>
+        <Button warning className='' onClick={decrement}>
+          Decrement
+        </Button>
       </div>
       <form onSubmit={handleSubmit}>
         <label htmlFor=''>Add alot</label>
@@ -41,7 +45,7 @@ function Counter2({ initialCount }) {
           value={valueToAdd || ''}
           onChange={handleChange}
         />
-        <Button>Add it</Button>
+        <Button success>Add it</Button>
       </form>
     </Panel>
   );
