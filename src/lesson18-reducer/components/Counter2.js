@@ -5,10 +5,19 @@ import Panel from '../../lesson12-props_state/components/Panel';
 import Button from '../../lesson10-buttons/components/Button';
 
 const reducer = (state, action) => {
-  return {
-    ...state,
-    counter: state.counter + 1,
-  };
+  if (action.type === 'increment') {
+    return {
+      ...state,
+      counter: state.counter + 1,
+    };
+  }
+  if (action.type === 'ValueToAdd') {
+    return {
+      ...state,
+      valueToAdd: action.payload,
+    };
+  }
+  return state;
 };
 
 function Counter2({ initialCount }) {
@@ -23,7 +32,9 @@ function Counter2({ initialCount }) {
   console.log(state);
   const increment = () => {
     // setCounter(counter + 1);
-    dispatch();
+    dispatch({
+      type: 'increment',
+    });
   };
 
   const decrement = () => {
@@ -32,8 +43,11 @@ function Counter2({ initialCount }) {
 
   const handleChange = event => {
     const value = parseInt(event.target.value) || 0;
-
     // setValueToAdd(value);
+    dispatch({
+      type: 'ValueToAdd',
+      payload: value,
+    });
   };
 
   const handleSubmit = () => {
