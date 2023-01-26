@@ -4,7 +4,12 @@ import { useReducer } from 'react';
 import Panel from '../../lesson12-props_state/components/Panel';
 import Button from '../../lesson10-buttons/components/Button';
 
-const reducer = () => {};
+const reducer = (state, action) => {
+  return {
+    ...state,
+    counter: state.counter + 1,
+  };
+};
 
 function Counter2({ initialCount }) {
   // const [counter, setCounter] = useState(initialCount);
@@ -18,6 +23,7 @@ function Counter2({ initialCount }) {
   console.log(state);
   const increment = () => {
     // setCounter(counter + 1);
+    dispatch();
   };
 
   const decrement = () => {
