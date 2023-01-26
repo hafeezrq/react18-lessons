@@ -11,7 +11,7 @@ function Sidebar() {
     { label: 'Context', path: '/context' },
     { label: 'Modal', path: '/modal' },
     { label: 'Data Table', path: '/table' },
-    { label: 'Counter', path: '/counter' },
+    { label: 'Custom Hooks', path: '/counter' },
     { label: 'Reducer', path: '/counter2' },
     { label: 'Redux Toolkit', path: '/rtk-demo' },
   ];
