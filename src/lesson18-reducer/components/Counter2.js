@@ -4,14 +4,17 @@ import { useReducer } from 'react';
 import Panel from '../../lesson12-props_state/components/Panel';
 import Button from '../../lesson10-buttons/components/Button';
 
+const INCREMENT = 'increment';
+const VALUE_TO_ADD = 'ValueToAdd';
+
 const reducer = (state, action) => {
-  if (action.type === 'increment') {
+  if (action.type === INCREMENT) {
     return {
       ...state,
       counter: state.counter + 1,
     };
   }
-  if (action.type === 'ValueToAdd') {
+  if (action.type === VALUE_TO_ADD) {
     return {
       ...state,
       valueToAdd: action.payload,
@@ -33,7 +36,7 @@ function Counter2({ initialCount }) {
   const increment = () => {
     // setCounter(counter + 1);
     dispatch({
-      type: 'increment',
+      type: INCREMENT,
     });
   };
 
@@ -45,7 +48,7 @@ function Counter2({ initialCount }) {
     const value = parseInt(event.target.value) || 0;
     // setValueToAdd(value);
     dispatch({
-      type: 'ValueToAdd',
+      type: VALUE_TO_ADD,
       payload: value,
     });
   };
