@@ -5,22 +5,37 @@ import Panel from '../../lesson12-props_state/components/Panel';
 import Button from '../../lesson10-buttons/components/Button';
 
 const INCREMENT = 'increment';
+const DECREMENT = 'decrement';
 const VALUE_TO_ADD = 'ValueToAdd';
+const ON_SUBMIT = 'submit';
 
 const reducer = (state, action) => {
-  if (action.type === INCREMENT) {
-    return {
-      ...state,
-      counter: state.counter + 1,
-    };
+  switch (action.type) {
+    case INCREMENT:
+      return {
+        ...state,
+        counter: state.counter + 1,
+      };
+    case DECREMENT:
+      return {
+        ...state,
+        counter: state.counter - 1,
+      };
+    case VALUE_TO_ADD:
+      return {
+        ...state,
+        valueToAdd: action.payload,
+      };
+    case ON_SUBMIT:
+      return {
+        ...state,
+        counter: state.counter + state.valueToAdd,
+        valueToAdd: 0,
+      };
+
+    default:
+      return state;
   }
-  if (action.type === VALUE_TO_ADD) {
-    return {
-      ...state,
-      valueToAdd: action.payload,
-    };
-  }
-  return state;
 };
 
 function Counter2({ initialCount }) {
@@ -42,6 +57,9 @@ function Counter2({ initialCount }) {
 
   const decrement = () => {
     // setCounter(counter - 1);
+    dispatch({
+      type: DECREMENT,
+    });
   };
 
   const handleChange = event => {
@@ -53,9 +71,13 @@ function Counter2({ initialCount }) {
     });
   };
 
-  const handleSubmit = () => {
+  const handleSubmit = event => {
+    event.preventDefault();
     // setCounter(counter + valueToAdd);
     // setValueToAdd(0);
+    dispatch({
+      type: ON_SUBMIT,
+    });
   };
 
   return (
