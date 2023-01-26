@@ -3,6 +3,7 @@ import SongsPlayList from '../components/SongsPlayList';
 
 import 'bulma/css/bulma.css';
 import '../styles.css';
+import '../store';
 
 export default function RTKDemoPage() {
   const handleResetClick = () => {
