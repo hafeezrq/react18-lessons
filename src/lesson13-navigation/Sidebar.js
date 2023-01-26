@@ -5,14 +5,15 @@ function Sidebar() {
     { label: 'Dropdown', path: '/' },
     { label: 'Accordion', path: '/accordion' },
     { label: 'Buttons', path: '/buttons' },
-    { label: 'State Example1', path: '/stateExample1' },
-    { label: 'API Example', path: '/picsPage' },
-    { label: 'Forms-API Example', path: '/form-api' },
-    { label: 'Context Example', path: '/context' },
+    { label: 'State', path: '/stateExample1' },
+    { label: 'API', path: '/picsPage' },
+    { label: 'Forms-API', path: '/form-api' },
+    { label: 'Context', path: '/context' },
     { label: 'Modal', path: '/modal' },
     { label: 'Data Table', path: '/table' },
     { label: 'Counter', path: '/counter' },
-    { label: 'Counter2', path: '/counter2' },
+    { label: 'Reducer', path: '/counter2' },
+    { label: 'Redux Toolkit', path: '/rtk-demo' },
   ];
 
   const renderedLinks = links.map(link => {
