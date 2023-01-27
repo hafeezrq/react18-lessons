@@ -17,4 +17,10 @@ const store = configureStore({
   },
 });
 
-console.log(store);
+const startingState = store.getState();
+console.log(JSON.stringify(startingState));
+
+store.dispatch(songsSlice.actions.addSong('Some Song'));
+
+const finalState = store.getState();
+console.log(JSON.stringify(finalState));
