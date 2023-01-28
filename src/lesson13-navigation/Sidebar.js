@@ -14,6 +14,7 @@ function Sidebar() {
     { label: 'Custom Hooks', path: '/counter' },
     { label: 'Reducer', path: '/counter2' },
     { label: 'Redux Toolkit', path: '/rtk-demo' },
+    { label: 'Redux Toolkit 2', path: '/rtk-demo2' },
   ];
 
   const renderedLinks = links.map(link => {

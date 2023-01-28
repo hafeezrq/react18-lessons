@@ -15,6 +15,7 @@ import TablePage from './lesson15_16-dataTable/pages/TablePage';
 import CounterPage from './lesson17-CustomHooks/CounterPage';
 import CounterPage2 from './lesson18-reducer/pages/CounterPage2';
 import RTKDemoPage from './lesson19-RTK/pages/RTKDemoPage';
+import RTKDemo2Page from './lesson20-RTK-2/pages/RTKDemo2Page';
 
 function App() {
   return (
@@ -62,6 +63,11 @@ function App() {
         <Rout path='/rtk-demo'>
           <Provider store={store}>
             <RTKDemoPage />
+          </Provider>
+        </Rout>
+        <Rout path='/rtk-demo2'>
+          <Provider store={store}>
+            <RTKDemo2Page />
           </Provider>
         </Rout>
       </div>
