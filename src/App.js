@@ -1,5 +1,6 @@
+import { Provider } from 'react-redux';
+import { store } from './lesson19-RTK/store';
 import Rout from './lesson13-navigation/Rout';
-
 import ButtonsPage from './lesson10-buttons/pages/ButtonsPage';
 import StateDesignPage from './lesson11-state/pages/StateDesignPage';
 import PropsStatePage from './lesson12-props_state/pages/PropsStatePage';
@@ -8,13 +9,12 @@ import AnimalPage from './lesson4-state/pages/AnimalPage';
 import PicsPage from './lesson5-api/PicsPage';
 import FormsAPIPage from './lesson6_7-forms_api/FormsAPIPage';
 import FormWithContextPage from './lesson8-context/FormWithContexPage';
-import { Provider } from './lesson8-context/context/books';
+import { BooksProvider } from './lesson8-context/context/books';
 import ModalPage from './lesson14-PortalWithReactDOM/pages/ModalPage';
 import TablePage from './lesson15_16-dataTable/pages/TablePage';
 import CounterPage from './lesson17-CustomHooks/CounterPage';
 import CounterPage2 from './lesson18-reducer/pages/CounterPage2';
 import RTKDemoPage from './lesson19-RTK/pages/RTKDemoPage';
-// import { Provider } from './lesson8-context/context/books';
 
 function App() {
   return (
@@ -34,9 +34,9 @@ function App() {
           <FormsAPIPage />
         </Rout>
         <Rout path={'/context'}>
-          <Provider>
+          <BooksProvider>
             <FormWithContextPage />
-          </Provider>
+          </BooksProvider>
         </Rout>
         <Rout path={'/accordion'}>
           <StateDesignPage />
@@ -60,15 +60,11 @@ function App() {
           <CounterPage2 initialCount={10} />
         </Rout>
         <Rout path='/rtk-demo'>
-          <RTKDemoPage />
+          <Provider store={store}>
+            <RTKDemoPage />
+          </Provider>
         </Rout>
       </div>
-      {/* <PicsApp /> */}
-      {/* <FormsApp /> */}
-      {/* <Provider>
-        <FormsAppContext />
-      </Provider> */}
-      {/* <ButtonCompApp /> */}
     </div>
   );
 }

@@ -4,7 +4,7 @@ import axios from 'axios';
 
 const BookContext = createContext();
 
-function Provider({ children }) {
+function BooksProvider({ children }) {
   const [books, setBooks] = useState([]);
 
   const fetchBooks = useCallback(async () => {
@@ -54,6 +54,6 @@ function Provider({ children }) {
   );
 }
 
-export { Provider };
+export { BooksProvider };
 
 export default BookContext;
