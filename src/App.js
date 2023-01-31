@@ -16,6 +16,7 @@ import CounterPage from './lesson17-CustomHooks/CounterPage';
 import CounterPage2 from './lesson18-reducer/pages/CounterPage2';
 import RTKDemoPage from './lesson19-RTK/pages/RTKDemoPage';
 import RTKDemo2Page from './lesson20-RTK-2/pages/RTKDemo2Page';
+import AsyncThunksAPIDemo from './lesson21-Async_Thunks/pages/AsyncThunksAPIDemo';
 
 function App() {
   return (
@@ -69,6 +70,9 @@ function App() {
           <Provider store={store}>
             <RTKDemo2Page />
           </Provider>
+        </Rout>
+        <Rout path='/async-thunks-demo'>
+          <AsyncThunksAPIDemo />
         </Rout>
       </div>
     </div>

@@ -15,6 +15,7 @@ function Sidebar() {
     { label: 'Reducer', path: '/counter2' },
     { label: 'Redux Toolkit', path: '/rtk-demo' },
     { label: 'Redux Toolkit 2', path: '/rtk-demo2' },
+    { label: 'AsyncThunksAPI', path: '/async-thunks-demo' },
   ];
 
   const renderedLinks = links.map(link => {
