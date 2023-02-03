@@ -17,13 +17,20 @@ import {
   formReducer,
 } from '../../lesson20-RTK-2/store/slices/formSlice';
 
+// Lesson21- async thunks
+import { usersReducer } from '../../lesson21-Async_Thunks/store/slices/usersSlice';
+
 const store = configureStore({
   reducer: {
     songs: songsReducer,
     movies: moviesReducer,
+
     //RTK-2
     form: formReducer,
     cars: carsReducer,
+
+    // Lesson21-async-thunks
+    users: usersReducer,
   },
 });
 

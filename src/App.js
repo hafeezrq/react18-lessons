@@ -72,7 +72,9 @@ function App() {
           </Provider>
         </Rout>
         <Rout path='/async-thunks-demo'>
-          <AsyncThunksAPIDemo />
+          <Provider store={store}>
+            <AsyncThunksAPIDemo />
+          </Provider>
         </Rout>
       </div>
     </div>
