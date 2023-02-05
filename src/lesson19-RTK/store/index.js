@@ -47,5 +47,4 @@ export {
   changeName,
   changeCost,
 };
-// RTK-2
-// export { changeSearchTerm, addCar, removeCar, changeName, changeCost };
+export * from '../../lesson21-Async_Thunks/store/thunks/fetchUsers';
