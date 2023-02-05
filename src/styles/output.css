@@ -748,8 +748,8 @@ video {
 }
 
 .animate-shimmer {
-  -webkit-animation: shimmer 3.5s infinite;
-          animation: shimmer 3.5s infinite;
+  -webkit-animation: shimmer 2.0s infinite;
+          animation: shimmer 2.0s infinite;
 }
 
 .cursor-pointer {
@@ -986,6 +986,10 @@ video {
 
 .p-10 {
   padding: 2.5rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
 }
 
 .px-3 {
