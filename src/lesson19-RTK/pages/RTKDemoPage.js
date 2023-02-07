@@ -17,14 +17,14 @@ export default function RTKDemoPage() {
   };
 
   return (
-    <div className='container is-fluid'>
-      <button onClick={() => handleResetClick()} className='button is-danger'>
-        Reset Both Playlists
-      </button>
-      <hr />
+    <div className='container mx-auto px-8'>
       <MoviePlayList />
       <hr />
       <SongsPlayList />
+      <hr />
+      <button onClick={() => handleResetClick()} className='button is-danger'>
+        Reset Both Playlists
+      </button>
     </div>
   );
 }

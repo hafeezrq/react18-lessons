@@ -11,7 +11,7 @@ const PicsPage = () => {
     setImages(result);
   };
   return (
-    <div>
+    <div className='container mx-auto px-4 grid grid-cols-6'>
       <SearchBar onSubmit={handleSubmit} />
       <ImageList images={images} />
     </div>

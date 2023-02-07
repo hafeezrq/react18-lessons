@@ -2,11 +2,11 @@ import Link from './Link';
 
 function Sidebar() {
   const links = [
-    { label: 'Dropdown', path: '/' },
-    { label: 'Accordion', path: '/accordion' },
-    { label: 'Buttons', path: '/buttons' },
-    { label: 'State', path: '/stateExample1' },
-    { label: 'API', path: '/picsPage' },
+    { label: 'Props-State', path: '/' },
+    { label: 'State - 1', path: '/accordion' },
+    { label: 'Reusable Component - Button', path: '/buttons' },
+    { label: 'State - 2', path: '/stateExample1' },
+    { label: 'API With React', path: '/picsPage' },
     { label: 'Forms-API', path: '/form-api' },
     { label: 'Context', path: '/context' },
     { label: 'Modal', path: '/modal' },
@@ -30,7 +30,7 @@ function Sidebar() {
     );
   });
   return (
-    <div className='sticky top-0 overflow-y-scroll flex flex-col items-start'>
+    <div className='sticky top-0 overflow-y-scroll flex flex-col items-start col-span-3 bg-slate-100'>
       {renderedLinks}
     </div>
   );

@@ -1,15 +1,16 @@
 import { Provider } from 'react-redux';
 import { store } from './lesson19-RTK/store';
-import Rout from './lesson13-navigation/Rout';
-import ButtonsPage from './lesson10-buttons/pages/ButtonsPage';
-import StateDesignPage from './lesson11-state/pages/StateDesignPage';
-import PropsStatePage from './lesson12-props_state/pages/PropsStatePage';
-import Sidebar from './lesson13-navigation/Sidebar';
+import { BooksProvider } from './lesson8-context/context/books';
+
 import AnimalPage from './lesson4-state/pages/AnimalPage';
 import PicsPage from './lesson5-api/PicsPage';
 import FormsAPIPage from './lesson6_7-forms_api/FormsAPIPage';
 import FormWithContextPage from './lesson8-context/FormWithContexPage';
-import { BooksProvider } from './lesson8-context/context/books';
+import ButtonsPage from './lesson10-buttons/pages/ButtonsPage';
+import StateDesignPage from './lesson11-state/pages/StateDesignPage';
+import PropsStatePage from './lesson12-props_state/pages/PropsStatePage';
+import Rout from './lesson13-navigation/Rout';
+import Sidebar from './lesson13-navigation/Sidebar';
 import ModalPage from './lesson14-PortalWithReactDOM/pages/ModalPage';
 import TablePage from './lesson15_16-dataTable/pages/TablePage';
 import CounterPage from './lesson17-CustomHooks/CounterPage';
@@ -20,12 +21,14 @@ import AsyncThunksAPIDemo from './lesson21-Async_Thunks/pages/AsyncThunksAPIDemo
 
 function App() {
   return (
-    <div className=' container mx-auto grid grid-cols-6 gap-4 mt-4'>
-      <h1 className='text-2xl text-center mb-8 font-bold text-blue-500 col-span-6'>
-        React Version 18 Lessons
-      </h1>
+    <div className='container mx-auto grid grid-cols-12'>
+      <header className='flex items-center justify-center col-span-12 bg-sky-200	h-32'>
+        <h1 className='text-4xl font-bold text-blue-500'>
+          React Version 18 Lessons
+        </h1>
+      </header>
       <Sidebar />
-      <div className='col-span-5'>
+      <div className='col-span-9'>
         <Rout path={'/stateExample1'}>
           <AnimalPage />
         </Rout>

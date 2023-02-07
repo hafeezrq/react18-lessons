@@ -11,12 +11,14 @@ const SearchBar = ({ onSubmit }) => {
     setTerm(event.target.value);
   };
   return (
-    <div className='search-bar'>
-      <form onSubmit={handleSubmit}>
-        <label htmlFor=''>Enter search term</label>
-        <input value={term} onChange={handleChange} />
+    <>
+      <form onSubmit={handleSubmit} className='flex flex-row col-span-6 gap-4'>
+        <label htmlFor='' className='font-semibold text-lg '>
+          Enter search term
+        </label>
+        <input value={term} onChange={handleChange} className='border-4' />
       </form>
-    </div>
+    </>
   );
 };
 
