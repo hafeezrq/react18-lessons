@@ -721,6 +721,10 @@ video {
   height: 2.5rem;
 }
 
+.h-8 {
+  height: 2rem;
+}
+
 .w-48 {
   width: 12rem;
 }
@@ -762,6 +766,25 @@ video {
 .animate-shimmer {
   -webkit-animation: shimmer 2.0s infinite;
           animation: shimmer 2.0s infinite;
+}
+
+@-webkit-keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.animate-spin {
+  -webkit-animation: spin 1s linear infinite;
+          animation: spin 1s linear infinite;
 }
 
 .cursor-pointer {

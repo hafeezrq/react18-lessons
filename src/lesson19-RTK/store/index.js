@@ -49,3 +49,4 @@ export {
 };
 export * from '../../lesson21-Async_Thunks/store/thunks/fetchUsers';
 export * from '../../lesson21-Async_Thunks/store/thunks/addUser';
+export * from '../../lesson21-Async_Thunks/store/thunks/removeUser';
