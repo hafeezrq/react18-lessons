@@ -35,7 +35,7 @@ function UserList() {
   }
 
   return (
-    <div>
+    <>
       <div className='flex flex-row justify-between items-center m-3'>
         <h1 className='m-2 text-3xl font-semibold'>Users</h1>
         <Button
@@ -48,7 +48,7 @@ function UserList() {
         {creatingUserError && 'Error creating user..'}
       </div>
       {content}
-    </div>
+    </>
   );
 }
 

@@ -19,10 +19,14 @@ import RTKDemoPage from './lesson19-RTK/pages/RTKDemoPage';
 import RTKDemo2Page from './lesson20-RTK-2/pages/RTKDemo2Page';
 import AsyncThunksAPIDemo from './lesson21-Async_Thunks/pages/AsyncThunksAPIDemo';
 
+import reactLogo from './img/reactLogo.svg';
+// import logo from './img/logo192.png';
+
 function App() {
   return (
-    <div className='container mx-auto grid grid-cols-12'>
-      <header className='flex items-center justify-center col-span-12 bg-sky-200	h-32'>
+    <div className='container mx-auto grid grid-cols-12 gap-4'>
+      <header className='flex items-center justify-center col-span-12 gap-x-16 bg-sky-200	h-32'>
+        <img src={reactLogo} alt='React Logo' className='h-8 w-8' />
         <h1 className='text-4xl font-bold text-blue-500'>
           React Version 18 Lessons
         </h1>
