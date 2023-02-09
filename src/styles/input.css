@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  min-height: 100vh;
+  background-color: aliceblue;
+}
 button > svg {
   margin-right: 5px;
 }
