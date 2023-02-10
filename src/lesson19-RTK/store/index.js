@@ -1,4 +1,5 @@
-import { configureStore } from '@reduxjs/toolkit';
+import { configureStore, getDefaultMiddleware } from '@reduxjs/toolkit';
+import { setupListeners } from '@reduxjs/toolkit/query';
 
 import { moviesReducer, addMovie, removeMovie } from './slices/moviesSlice';
 import { songsReducer, addSong, removeSong } from './slices/songsSlice';
@@ -19,6 +20,7 @@ import {
 
 // Lesson21- async thunks
 import { usersReducer } from '../../lesson21-Async_Thunks/store/slices/usersSlice';
+import { albumApi } from '../../lesson21-Async_Thunks/apis/albumApi';
 
 const store = configureStore({
   reducer: {
@@ -31,6 +33,10 @@ const store = configureStore({
 
     // Lesson21-async-thunks
     users: usersReducer,
+    [albumApi.reducerPath]: albumApi.reducer,
+  },
+  middleware: getDefaultMiddleware => {
+    return getDefaultMiddleware().concat(albumApi.middleware);
   },
 });
 
@@ -47,6 +53,10 @@ export {
   changeName,
   changeCost,
 };
+
+setupListeners(store.dispatch);
+
 export * from '../../lesson21-Async_Thunks/store/thunks/fetchUsers';
 export * from '../../lesson21-Async_Thunks/store/thunks/addUser';
 export * from '../../lesson21-Async_Thunks/store/thunks/removeUser';
+export { useFetchAlbumsQuery } from '../../lesson21-Async_Thunks/apis/albumApi';
