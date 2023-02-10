@@ -40,7 +40,6 @@ function UserList() {
         <h1 className='m-2 text-3xl font-semibold'>Users</h1>
         <Button
           loading={isCreatingUser}
-          primary
           onClick={handleAddUser}
           className='font-bold'>
           + Add User

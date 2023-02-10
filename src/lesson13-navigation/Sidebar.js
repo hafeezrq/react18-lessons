@@ -30,7 +30,7 @@ function Sidebar() {
     );
   });
   return (
-    <div className='sticky top-0 overflow-y-scroll flex flex-col items-start col-span-3 bg-slate-100'>
+    <div className='sticky top-0 overflow-y-scroll flex flex-col items-start col-span-3 bg-sky-100 font-semibold'>
       {renderedLinks}
     </div>
   );
