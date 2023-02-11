@@ -41,7 +41,7 @@ function UserList() {
         <Button
           loading={isCreatingUser}
           onClick={handleAddUser}
-          className='font-bold'>
+          className='font-bold bg-indigo-100'>
           + Add User
         </Button>
         {creatingUserError && 'Error creating user..'}
