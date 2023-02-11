@@ -62,4 +62,5 @@ export * from '../../lesson21-Async_Thunks/store/thunks/removeUser';
 export {
   useFetchAlbumsQuery,
   useAddAlbumMutation,
+  useRemoveAlbumMutation,
 } from '../../lesson21-Async_Thunks/apis/albumApi';
