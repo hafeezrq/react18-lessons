@@ -1,4 +1,4 @@
-import { configureStore, getDefaultMiddleware } from '@reduxjs/toolkit';
+import { configureStore } from '@reduxjs/toolkit';
 import { setupListeners } from '@reduxjs/toolkit/query';
 
 import { moviesReducer, addMovie, removeMovie } from './slices/moviesSlice';
@@ -59,4 +59,7 @@ setupListeners(store.dispatch);
 export * from '../../lesson21-Async_Thunks/store/thunks/fetchUsers';
 export * from '../../lesson21-Async_Thunks/store/thunks/addUser';
 export * from '../../lesson21-Async_Thunks/store/thunks/removeUser';
-export { useFetchAlbumsQuery } from '../../lesson21-Async_Thunks/apis/albumApi';
+export {
+  useFetchAlbumsQuery,
+  useAddAlbumMutation,
+} from '../../lesson21-Async_Thunks/apis/albumApi';
