@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 
 import { NavigationProvider } from './lesson13-navigation/context/navigation';
-import './styles/output.css';
+import './css/styles.css';
 
 import App from './App';
 
