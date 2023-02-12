@@ -2,6 +2,7 @@ import { GoTrashcan } from 'react-icons/go';
 import ExpandablePanel from './ExpandablePanel';
 import { useRemoveAlbumMutation } from '../../lesson19-RTK/store';
 import Button from '../../lesson10-buttons/components/Button';
+import PhotosList from './PhotosList';
 
 function AlbumListItem({ album }) {
   const [removeAlbum, results] = useRemoveAlbumMutation();
@@ -23,7 +24,7 @@ function AlbumListItem({ album }) {
   );
   return (
     <ExpandablePanel key={album.id} header={header}>
-      List of photos.
+      <PhotosList album={album} />
     </ExpandablePanel>
   );
 }

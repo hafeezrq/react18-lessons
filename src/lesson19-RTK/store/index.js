@@ -21,6 +21,7 @@ import {
 // Lesson21- async thunks
 import { usersReducer } from '../../lesson21-Async_Thunks/store/slices/usersSlice';
 import { albumApi } from '../../lesson21-Async_Thunks/apis/albumApi';
+import { photosApi } from '../../lesson21-Async_Thunks/apis/photosApi';
 
 const store = configureStore({
   reducer: {
@@ -34,9 +35,12 @@ const store = configureStore({
     // Lesson21-async-thunks
     users: usersReducer,
     [albumApi.reducerPath]: albumApi.reducer,
+    [photosApi.reducerPath]: photosApi.reducer,
   },
   middleware: getDefaultMiddleware => {
-    return getDefaultMiddleware().concat(albumApi.middleware);
+    return getDefaultMiddleware()
+      .concat(albumApi.middleware)
+      .concat(photosApi.middleware);
   },
 });
 
@@ -64,3 +68,8 @@ export {
   useAddAlbumMutation,
   useRemoveAlbumMutation,
 } from '../../lesson21-Async_Thunks/apis/albumApi';
+export {
+  useFetchPhotosQuery,
+  useAddPhotoMutation,
+  useRemovePhotoMutation,
+} from '../../lesson21-Async_Thunks/apis/photosApi';
