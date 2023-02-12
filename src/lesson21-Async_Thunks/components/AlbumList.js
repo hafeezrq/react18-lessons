@@ -1,26 +1,22 @@
 import {
   useFetchAlbumsQuery,
   useAddAlbumMutation,
-  useRemoveAlbumMutation,
 } from '../../lesson19-RTK/store';
 
 import Skeleton from './Skeleton';
-import ExpandablePanel from './ExpandablePanel';
 import Button from '../../lesson10-buttons/components/Button';
 import AlbumListItem from './AlbumListItem';
 
 function AlbumList({ user }) {
-  const { data, error, isLoading } = useFetchAlbumsQuery(user);
+  const { data, error, isFetching } = useFetchAlbumsQuery(user);
   const [addAlbum, results] = useAddAlbumMutation();
-  const [removeAlbum, removeAlbumResults] = useRemoveAlbumMutation();
 
   const handleAddAlbum = () => {
-    console.log(results);
     addAlbum(user);
   };
 
   let content;
-  if (isLoading) {
+  if (isFetching) {
     content = <Skeleton className='h-5 w-3/4 mx-auto' times={3} />;
   } else if (error) {
     content = <div>Error loading albums</div>;
