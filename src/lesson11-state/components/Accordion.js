@@ -30,9 +30,9 @@ function Accordion({ items }) {
       </span>
     );
     return (
-      <div key={item.id}>
+      <div key={item.id} className='bg-white border-b-2'>
         <div
-          className='flex p-3 bg-gray-50 border-b items-center justify-between cursor-pointer'
+          className='flex p-3 items-center justify-between cursor-pointer text-xl font-semibold'
           onClick={() => handleClick(index)}>
           {item.label}
           {icon}

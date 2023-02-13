@@ -15,13 +15,13 @@ function PropsStatePage() {
     { label: 'Green', value: 'green' },
   ];
   return (
-    <div>
+    <>
       <Dropdown
         options={options}
         value={selection}
         onChange={handleSelection}
       />
-    </div>
+    </>
   );
 }
 
