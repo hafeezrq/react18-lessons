@@ -33,10 +33,15 @@ function StateDesignPage() {
       </h3>
       <p className='mb-4'>
         This simple example uses the react hook{' '}
-        <span className={classes}>useState</span> to design state for the
-        component, communicate <span className={classes}>props</span> from
-        parent down to the children. Also how to design and use an{' '}
+        <span className={classes}>useState</span> to design{' '}
+        <span className={classes}>state</span> for the component, communicate{' '}
+        <span className={classes}>props</span> from parent down to the children.
+        Also how to design and use an{' '}
         <span className='font-semibold'>Accordion</span> in UI.
+      </p>
+      <p className='mb-4'>
+        The code for this demo is in the directory{' '}
+        <span className='italic'>lesson11</span>.
       </p>
       <Accordion items={items} />
     </>

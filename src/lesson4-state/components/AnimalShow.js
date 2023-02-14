@@ -24,10 +24,12 @@ function AnimalShow({ type }) {
     setClicks(clicks + 1);
   };
   return (
-    <div className='animal-show' onClick={handleClick}>
-      <img className='animal' src={svgMap[type]} alt='' />
+    <div
+      className='relative border-1 border-gray-300 rounded m-2 shadow-lg bg-blue-100 p-2 w-1/4'
+      onClick={handleClick}>
+      <img className='animal h-52' src={svgMap[type]} alt={`A ${type}`} />
       <img
-        className='heart'
+        className='absolute bottom-4 right-4'
         src={heart}
         alt='Heart'
         style={{ width: 10 + 10 * clicks + 'px' }}
