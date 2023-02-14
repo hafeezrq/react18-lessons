@@ -2,8 +2,6 @@ import { useState } from 'react';
 import AnimalShow from '../components/AnimalShow';
 import classNames from 'classnames';
 
-import './AnimalApp.css';
-
 function getRandomAnimal() {
   const myAnimals = ['bird', 'cow', 'gator', 'horse', 'cat', 'dog'];
   return myAnimals[Math.floor(Math.random() * myAnimals.length)];
