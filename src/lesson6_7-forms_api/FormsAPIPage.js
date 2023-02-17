@@ -59,6 +59,8 @@ function FormsAPIPage() {
         well. The value of input element is controlled through{' '}
         <span className={classes}>state</span>. Also{' '}
         <span className={classes}>props, event handlers</span> are used.
+        Importantly an <span className='font-bold italic'>API server</span> is
+        setup to desing and develop REST API's.
         <br />
         Code for this program can be find in the{' '}
         <spnan className='italic'>directory</spnan>{' '}
