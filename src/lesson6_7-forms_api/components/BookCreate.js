@@ -23,7 +23,7 @@ function BookCreate({ createBook }) {
           value={title}
           onChange={handleChange}
         />
-        <Button primary rounded className=''>
+        <Button primary rounded>
           Create
         </Button>
       </form>
