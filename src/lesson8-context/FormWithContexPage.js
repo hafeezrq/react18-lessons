@@ -30,7 +30,7 @@ function FormWithContextPage() {
         is setup to desing and develop REST API's, locally.
         <br />
         Code for this program can be find in the{' '}
-        <spnan className='italic'>directory</spnan>{' '}
+        <span className='italic'>directory</span>{' '}
         <span className='font-semibold'>lesson8</span>.
       </p>
       <BookCreate />
