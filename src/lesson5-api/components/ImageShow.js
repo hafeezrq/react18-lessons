@@ -1,12 +1,12 @@
 const ImageShow = ({ image }) => {
   return (
-    <div>
+    <>
       <img
-        className='api-img'
+        className='w-full mb-2'
         src={image.urls.small}
         alt={image.alt_description}
       />
-    </div>
+    </>
   );
 };
 

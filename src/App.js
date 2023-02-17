@@ -25,14 +25,14 @@ import reactLogo from './img/reactLogo.svg';
 function App() {
   return (
     <div className='container mx-auto grid grid-cols-12 gap-4'>
-      <header className='flex items-center justify-center col-span-12 gap-x-16 bg-sky-200	h-32'>
+      <header className='flex items-center justify-center col-span-12 gap-x-16 bg-sky-200	h-32 mt'>
         <img src={reactLogo} alt='React Logo' className='h-8 w-8' />
         <h1 className='text-4xl font-bold text-blue-500'>
           React Version 18 Lessons
         </h1>
       </header>
       <Sidebar />
-      <div className='col-span-9'>
+      <div className='col-span-9 container mx-auto'>
         <Rout path={'/stateExample1'}>
           <AnimalPage />
         </Rout>

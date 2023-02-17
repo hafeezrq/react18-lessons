@@ -6,7 +6,7 @@ function BookList({ books, onDelete, onEdit }) {
       <BookShow key={book.id} book={book} onDelete={onDelete} onEdit={onEdit} />
     );
   });
-  return <div className='book-list'>{renderedBooks}</div>;
+  return <div className='grid grid-cols-6 gap-2'>{renderedBooks}</div>;
 }
 
 export default BookList;

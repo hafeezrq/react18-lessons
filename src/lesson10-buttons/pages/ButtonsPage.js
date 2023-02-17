@@ -13,7 +13,7 @@ function ButtonsPage() {
     // console.log('Got MouseLeave!!!');
   };
   return (
-    <div>
+    <div className='flex flex-col items-center justify-center'>
       <div>
         <Button primary outline onClick={handleClick} className='mb-5'>
           <GoBell />
