@@ -31,7 +31,21 @@ function TablePage() {
     },
   ];
   return (
-    <div>
+    <div className='flex flex-col items-center'>
+      <header>
+        <h1 className='text-2xl font-semibold'>
+          Demo Features: Design and Use Table in React + Sorting functionality
+        </h1>
+        <p>
+          A demo of using tables in a React App. Data transfer between
+          components throu Props system. Also created useSort custom hook to
+          implement sorting facility.
+        </p>
+        <p>
+          Code for the app is in the directory{' '}
+          <span className='italic'>lesson15_16</span>.
+        </p>
+      </header>
       <SortableTable data={data} config={config} />
     </div>
   );

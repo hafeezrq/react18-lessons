@@ -26,7 +26,7 @@ function Table({ data, config }) {
     );
   });
   return (
-    <table className='table-auto border-spacing-2'>
+    <table className='table-auto border-spacing-2 border mt-4'>
       <thead>
         <tr className='border-b-2'>{renderedTHeaders}</tr>
       </thead>

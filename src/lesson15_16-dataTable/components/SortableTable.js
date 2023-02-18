@@ -30,10 +30,12 @@ function SortableTable(props) {
   });
 
   return (
-    <div>
-      {sortBy} - {sortOrder}
+    <>
       <Table {...props} data={sortedData} config={updatedConfig} />
-    </div>
+      <p className='text-lb font-medium mt-2'>
+        Sorted by: {sortBy} - {sortOrder} order
+      </p>
+    </>
   );
 }
 

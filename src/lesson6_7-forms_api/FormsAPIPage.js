@@ -63,7 +63,7 @@ function FormsAPIPage() {
         setup to desing and develop REST API's.
         <br />
         Code for this program can be find in the{' '}
-        <spnan className='italic'>directory</spnan>{' '}
+        <span className='italic'>directory</span>{' '}
         <span className='font-semibold'>lesson6_7</span>.
       </p>
       <BookCreate createBook={createBook} />
