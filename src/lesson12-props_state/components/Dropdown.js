@@ -41,10 +41,10 @@ function Dropdown({ options, value, onChange }) {
   const handleClick = () => setIsOpen(!isOpen);
 
   return (
-    <div ref={divElementRef} className='relative w-1/2 left-1/4'>
+    <div ref={divElementRef} className='relative w-1/2 left-1/4 mt-4'>
       <Panel
         onClick={handleClick}
-        className='flex justify-between items-center cursor-pointer text-2xl font-bold'>
+        className='flex justify-between items-center cursor-pointer text-xl font-semibold'>
         {value?.label || 'Select...'}
         <GoChevronDown className='text-lg' />
       </Panel>

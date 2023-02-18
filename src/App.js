@@ -30,7 +30,10 @@ function App() {
         <h1 className='text-4xl font-bold text-blue-500'>React Version 18</h1>
       </header>
       <Sidebar />
-      <div className='col-span-9 container mx-auto'>
+      <div className='col-start-4 col-end-12'>
+        <Rout path={'/'}>
+          <PropsStatePage />
+        </Rout>
         <Rout path={'/stateExample1'}>
           <AnimalPage />
         </Rout>
@@ -47,9 +50,6 @@ function App() {
         </Rout>
         <Rout path={'/accordion'}>
           <StateDesignPage />
-        </Rout>
-        <Rout path={'/'}>
-          <PropsStatePage />
         </Rout>
         <Rout path={'/buttons'}>
           <ButtonsPage />
