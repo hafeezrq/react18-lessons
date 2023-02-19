@@ -81,27 +81,51 @@ function Counter2({ initialCount }) {
   };
 
   return (
-    <Panel className='m-3'>
-      <h1 className='text-lg'>Counter: {state.counter}</h1>
-      <div className='flex flex-row space-x-4'>
-        <Button primary onClick={increment}>
-          Increment
-        </Button>
-        <Button warning className='' onClick={decrement}>
-          Decrement
-        </Button>
-      </div>
-      <form onSubmit={handleSubmit}>
-        <label htmlFor=''>Add alot</label>
-        <input
-          className='m-3 p-1 bg-gray-50 border border-gray-300'
-          type='number'
-          value={state.valueToAdd || ''}
-          onChange={handleChange}
-        />
-        <Button success>Add it</Button>
-      </form>
-    </Panel>
+    <>
+      <header className='ml-2'>
+        <h1 className='text-2xl font-semibold'>
+          Demo Feature(s): Use of Hook useReducer
+        </h1>
+        <p>
+          This program uses the{' '}
+          <span className='text-blue-500 font-medium'>useReducer</span> hook to
+          make change and manage the state of the component, instead of
+          useState. useReducer can handle multiple related state's part while
+          useState can handle one at a time. The concepts of{' '}
+          <span className='text-blue-500 font-medium'>
+            reducer, dispatch, action
+          </span>{' '}
+          are domonstrated.
+        </p>
+        <p>
+          The code for this program is in the{' '}
+          <span className='italic'>lesson17</span> directory.
+        </p>
+      </header>
+      <Panel className='m-3 w-2/3 mx-auto mt-4'>
+        <div className='flex flex-row space-x-4'>
+          <Button primary onClick={increment}>
+            Increment(1)
+          </Button>
+          <Button warning className='' onClick={decrement}>
+            Decrement(1)
+          </Button>
+          <h1 className='text-lg font-semibold'>
+            Counter(State): {state.counter}
+          </h1>
+        </div>
+        <form onSubmit={handleSubmit}>
+          <label className='font-semibold'>Add Number:</label>
+          <input
+            className='m-3 p-1 bg-gray-50 border border-gray-300'
+            type='number'
+            value={state.valueToAdd || ''}
+            onChange={handleChange}
+          />
+          <Button success>Add it</Button>
+        </form>
+      </Panel>
+    </>
   );
 }
 
