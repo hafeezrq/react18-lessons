@@ -13,7 +13,7 @@ function Sidebar() {
     { label: 'Data Table', path: '/table' },
     { label: 'Custom Hooks', path: '/counter' },
     { label: 'Reducer', path: '/counter2' },
-    { label: 'Redux Toolkit', path: '/rtk-demo' },
+    { label: 'Redux Toolkit 1', path: '/rtk-demo' },
     { label: 'Redux Toolkit 2', path: '/rtk-demo2' },
     { label: 'AsyncThunks-API-RTQ', path: '/async-thunks-demo' },
   ];
@@ -30,7 +30,7 @@ function Sidebar() {
     );
   });
   return (
-    <div className='sticky top-0 overflow-y-scroll flex flex-col items-start col-span-3 bg-sky-100 font-semibold'>
+    <div className='sticky top-0 overflow-y-scroll flex flex-col items-start col-span-3 bg-sky-100 border-2 border-sky-200 font-semibold'>
       {renderedLinks}
     </div>
   );

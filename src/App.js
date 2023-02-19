@@ -25,7 +25,7 @@ import reactLogo from './img/reactLogo.svg';
 function App() {
   return (
     <div className='container mx-auto grid grid-cols-12 gap-4'>
-      <header className='flex items-center justify-center col-span-12 gap-x-16 bg-sky-200	h-32 mt'>
+      <header className='flex items-center justify-center col-span-12 gap-x-16 bg-sky-200 border-2 border-sky-300 h-32 mt-1'>
         <img src={reactLogo} alt='React Logo' className='h-8 w-8' />
         <h1 className='text-4xl font-bold text-blue-500'>React Version 18</h1>
       </header>

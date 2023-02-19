@@ -5,8 +5,6 @@ import { addMovie, removeMovie } from '../store';
 
 function MoviePlayList() {
   const dispatch = useDispatch();
-  // To Do:
-  // Get list of movies
   const moviePlaylist = useSelector(state => {
     return state.movies;
   });
