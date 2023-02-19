@@ -1,11 +1,12 @@
 import { configureStore } from '@reduxjs/toolkit';
 import { setupListeners } from '@reduxjs/toolkit/query';
 
+// RTK - 1
 import { moviesReducer, addMovie, removeMovie } from './slices/moviesSlice';
 import { songsReducer, addSong, removeSong } from './slices/songsSlice';
 import { reset } from './actions';
 
-// RTK-2
+// RTK - 2
 import {
   changeSearchTerm,
   addCar,

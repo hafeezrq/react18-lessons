@@ -6,7 +6,9 @@ function CarValue() {
       .filter(car => car.name.toLowerCase().includes(searchTerm.toLowerCase()))
       .reduce((acc, car) => acc + car.cost, 0);
   });
-  return <div>Total Cost: ${totalCost}</div>;
+  return (
+    <div className='mb-8 text-xl font-semibold'>Total Cost: ${totalCost}</div>
+  );
 }
 
 export default CarValue;

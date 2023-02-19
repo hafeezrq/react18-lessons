@@ -21,7 +21,9 @@ function CarList() {
   const renderedCars = cars.map(car => {
     const bold = name && car.name.toLowerCase().includes(name.toLowerCase());
     return (
-      <div key={car.id} className={`panel ${bold && 'bold'}`}>
+      <div
+        key={car.id}
+        className={`panel ${bold && 'bold'} flex flex-row justify-between`}>
         <p className='text-lg font-semibold ml-2 px-5 py-2.5 mr-2 mb-2'>
           {car.name} - ${car.cost}
         </p>

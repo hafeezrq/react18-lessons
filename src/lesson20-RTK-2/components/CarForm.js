@@ -23,15 +23,15 @@ function CarForm() {
 
   return (
     <div>
-      <h4>Add Car</h4>
+      <h2 className='text-xl font-bold mb-2'>Add Car</h2>
       <form onSubmit={handleSubmit}>
-        <div className='inline-grid gap-4 grid-cols-3'>
+        <div className='flex flex-row justify-between items-center border-2 mb-8 py-4'>
           <div>
-            <label className='text-lg font-semibold' htmlFor=''>
-              Name
+            <label className='text-lg font-semibold ml-2' htmlFor=''>
+              Name:
             </label>
             <input
-              className='ml-2 border border-gray-300 px-5 py-2.5 mr-2 mb-2'
+              className='border border-gray-300  p-2.5'
               type='text'
               value={name}
               onChange={handleNameChange}
@@ -39,16 +39,16 @@ function CarForm() {
           </div>
           <div>
             <label className='text-lg font-semibold' htmlFor=''>
-              Cost
+              Cost:
             </label>
             <input
-              className='ml-2 border border-gray-300 px-5 py-2.5 mr-2 mb-2'
+              className='border border-gray-300 p-2.5'
               type='number'
               value={cost || ''}
               onChange={handleCostChange}
             />
           </div>
-          <button className='focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-lg px-5 py-2.5 mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800'>
+          <button className='focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-lg py-2.5 px-5 mr-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800'>
             Submit
           </button>
         </div>

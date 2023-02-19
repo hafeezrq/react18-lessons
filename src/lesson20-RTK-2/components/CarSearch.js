@@ -11,11 +11,14 @@ function CarSearch() {
     dispatch(changeSearchTerm(event.target.value));
   };
   return (
-    <div>
-      <h3>My Cars</h3>
+    <div className='flex flex-row justify-between items-center py-2 border'>
+      <h3 className='text-xl font-semibold'>My Cars</h3>
       <div>
-        <label htmlFor=''>Search</label>
+        <label className='text-xl font-semibold mr-1' htmlFor=''>
+          Search:
+        </label>
         <input
+          className='p-2 mr-2 border'
           type='text'
           value={searchTerm}
           onChange={handleSearchTermChange}
