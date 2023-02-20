@@ -5,7 +5,7 @@ const NavigationContext = createContext();
 function NavigationProvider({ children }) {
   const [currentPath, setCurrentPath] = useState(window.location.pathname);
 
-  // Following us just for to update the current path if user interacts
+  // Following is just for to update the current path if user interacts
   // with back and forward buttons of the browser.
   useEffect(() => {
     const handler = () => {
